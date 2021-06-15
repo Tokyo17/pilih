@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	body{
+		height: 100vh;
+
+	}
+		.img{
+			display: flex;
+			justify-content: center;
+		}
+		.img img{
+			max-width: 400px;
+		}
+		.pilihan{
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+		.pilihan button{
+			margin-right: 20px;
+		}
+		#btn{
+			margin-left: 100px ;
+
+		}
+		#yes{
+			position: absolute;
+			margin-left: -100px;
+		}
+	</style>
+</head>
+<body>
+	<div class="img">
+<img id="img" src="tenor.gif">
+</div>
+<div class="pilihan">
+<button id="yes" onclick="yes()">Yess I Will</button>
+<button id="btn" onclick="move()">No Yaackks</button>
+</div>
+
+
+<script type="text/javascript">
+	const btn=document.getElementById('btn');
+	const yess=document.getElementById('img');
+	function move () {
+		const x=Math.random()*60;
+
+		btn.style.marginLeft = x+'%';
+		btn.style.marginTop = x+'%';
+	}
+	function yes () {
+		 yess.src="tenor3.gif"
+	}
+
+
+</script>
+</body>
+</html>
