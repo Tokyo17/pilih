@@ -96,14 +96,20 @@ box-shadow:  5px 5px 9px #d3d3d3,
 <script type="text/javascript">
 	const btn=document.getElementById('btn');
 	const yess=document.getElementById('img');
+	const asek=document.getElementById('yes');
+
 	function move () {
 		const x=Math.random()*(300-100)+100;
 
 		btn.style.transform = `translateX(${x}px)` ;
 				btn.style.transform = `translateY(${x}px)` ;
+		btn.innerHTML="Thanks Baby";
+
 	}
 	function yes () {
-		 yess.src="tenor3.gif"
+
+		 yess.src="tenor3.gif";
+		 asek.innerHTML="Thanks Baby";
 	}
 
 
