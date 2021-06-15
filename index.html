@@ -30,13 +30,17 @@
 		.pilihan button{
 			font-size:17px;
 		}
+		.pilihan button {
+			
+		}
 		#btn{
-			margin-left: 130px ;
+		right: 100px ;
+
 
 		}
 		#yes{
-			position: absolute;
-			margin-left: -130px;
+		
+		
 		}
 		@media (max-width: 690px){
 			 img{
@@ -61,10 +65,10 @@
 	const btn=document.getElementById('btn');
 	const yess=document.getElementById('img');
 	function move () {
-		const x=Math.random()*60;
+		const x=Math.random()*(300-100)+100;
 
-		btn.style.marginLeft = x+'%';
-		btn.style.marginTop = x+'%';
+		btn.style.transform = `translateX(${x}px)` ;
+				btn.style.transform = `translateY(${x}px)` ;
 	}
 	function yes () {
 		 yess.src="tenor3.gif"
